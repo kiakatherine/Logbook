@@ -1,3 +1,18 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<header>
+	<h1>Logbook</h1>
+	<button class="button--add" {{action 'addNewEntry'}}>&#43;</button>
+</header>
 
-{{outlet}}
+<div class="main">
+	{{#each entry in entries}}
+		{{logbook-entry
+			workout=entry.workout
+			score=entry.score
+			classTime=entry.classTime
+			sleep=entry.sleep
+			nutrition=entry.nutrition
+			stress=entry.stress
+			notes=entry.notes
+		}}
+	{{/each}}
+</div>

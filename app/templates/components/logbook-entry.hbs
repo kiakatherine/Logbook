@@ -1,0 +1,36 @@
+<article class="entry">
+  <time>{{date}}</time>
+  
+  <div class="entry-section workout">
+  	<div class="flex-wrapper">
+	  	<div class="flex-col">
+	  		<h2>Workout</h2>
+		  	{{textarea value=workout}}
+	  	</div>
+	  	<div class="flex-col">
+	  		<h2>Score</h2>
+		  	<textarea {{bind-attr value=score}}></textarea>
+	  	</div>
+  	</div>
+  </div>
+  
+  <div class="entry-section notes">
+	  <div class="flex-wrapper">
+		  <div class="flex-col">
+		  	<h2>Class</h2>
+		  	<input type="text" />
+		  	
+		  	<h2>Nutrition</h2>
+		  	<input type="text" />
+		  </div>
+		  
+		  <div class="flex-col">
+		  	<h2>Sleep</h2>
+		  	<input type="text" />
+		  	
+		  	<h2>Stress</h2>
+		  	<input type="text" />
+		  </div>
+	  </div>
+  </div>
+</article>
